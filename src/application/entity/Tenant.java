@@ -11,15 +11,24 @@ public class Tenant {
   @Column(name = "id")
   private int id;
 
-  @Column(name = "size")
-  private double size;
+  @Column(name = "salutation")
+  private String salutation;
 
-  @Column(name = "rent")
-  private double rent;
+  @Column(name = "name")
+  private String name;
 
-  public Tenant(double size, double rent) {
-    this.size = size;
-    this.rent = rent;
+  @Column(name = "surname")
+  private String surname;
+
+  @Column(name = "email")
+  private String email;
+
+  public Tenant( String salutation, String name, String surname, String email) {
+
+    this.salutation = salutation;
+    this.name = name;
+    this.surname = surname;
+    this.email = email;
   }
 
   public int getId() {
@@ -30,19 +39,35 @@ public class Tenant {
     this.id = id;
   }
 
-  public double getSize() {
-    return size;
+  public String getSalutation() {
+    return salutation;
   }
 
-  public void setSize(double size) {
-    this.size = size;
+  public void setSalutation(String salutation) {
+    this.salutation = salutation;
   }
 
-  public double getRent() {
-    return rent;
+  public String getName() {
+    return name;
   }
 
-  public void setRent(double rent) {
-    this.rent = rent;
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public String getSurname() {
+    return surname;
+  }
+
+  public void setSurname(String surname) {
+    this.surname = surname;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
   }
 }
