@@ -34,14 +34,14 @@
                         <Font size="14.0"/>
                     </font>
                 </Label>
-                <TextField fx:id="tenantSurname" layoutX="200.0" layoutY="200.0" prefWidth="400.0" prefHeight="30.0"/>
+                <TextField fx:id="tenantSurname" layoutX="200.0" layoutY="220.0" prefWidth="400.0" prefHeight="30.0"/>
                 <Label layoutX="200.0" layoutY="180.0" text="E-Mail:">
                     <font>
                         <Font size="14.0"/>
                     </font>
                 </Label>
-                <TextField fx:id="tenantEmail" layoutX="200.0" layoutY="200.0" prefWidth="400.0" prefHeight="30.0"/>
-                <Button fx:id="addTenantBtn" layoutX="200.0" layoutY="340.0" mnemonicParsing="false" onAction="#addTenant" prefWidth="180.0" prefHeight="30.0" text="Hinzufügen">
+                <TextField fx:id="tenantEmail" layoutX="200.0" layoutY="240.0" prefWidth="400.0" prefHeight="30.0"/>
+                <Button fx:id="addTenantBtn" layoutX="200.0" layoutY="260.0" mnemonicParsing="false" onAction="#addTenant" prefWidth="180.0" prefHeight="30.0" text="Hinzufügen">
                     <font>
                         <Font size="14.0"/>
                     </font>
