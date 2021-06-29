@@ -2,6 +2,7 @@ package application.hibernate;
 
 import application.entity.Address;
 import application.entity.RealEstate;
+import application.entity.Tenant;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -24,8 +25,8 @@ public class HibernateManager {
   private static SessionFactory buildSessionFactory() {
     try {
       Configuration configuration = new Configuration();
-      configuration.setProperty("hibernate.connection.username", "springstudent");
-      configuration.setProperty("hibernate.connection.password", "springstudent");
+      configuration.setProperty("hibernate.connection.username", "root");
+      configuration.setProperty("hibernate.connection.password", "");
       configuration.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/hausbau_gbr?useSSL=false&serverTimezone=Europe/Berlin");
       configuration.setProperty("hibernate.connection.driver_class", "com.mysql.cj.jdbc.Driver");
       configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
@@ -36,6 +37,8 @@ public class HibernateManager {
 
       configuration.addAnnotatedClass(RealEstate.class);
       configuration.addAnnotatedClass(Address.class);
+      configuration.addAnnotatedClass(Tenant.class);
+
 
       ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
       return configuration.buildSessionFactory(serviceRegistry);

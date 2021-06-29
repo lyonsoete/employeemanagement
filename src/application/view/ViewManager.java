@@ -19,6 +19,7 @@ public class ViewManager {
   private Scene scene_additionalCostsView = null;
   private Scene scene_documentsView = null;
   private Scene scene_usersView = null;
+  private Scene scene_addTenantView = null;
 
   private Stage primarystage = null;
 
@@ -31,6 +32,7 @@ public class ViewManager {
       Pane pane_additionalCostsView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("additionalCostsView.fxml")));
       Pane pane_documentsView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("documentsView.fxml")));
       Pane pane_usersView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("usersView.fxml")));
+      Pane pane_addTenantView = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("addTenantView.fxml")));
 
       this.scene_loginView = new Scene(pane_loginView);
       this.scene_dashboardView = new Scene(pane_dashboardView);
@@ -39,6 +41,7 @@ public class ViewManager {
       this.scene_additionalCostsView = new Scene(pane_additionalCostsView);
       this.scene_documentsView = new Scene(pane_documentsView);
       this.scene_usersView = new Scene(pane_usersView);
+      this.scene_addTenantView = new Scene(pane_addTenantView);
 
     } catch (Exception e) {
       Alert alert = new Alert(Alert.AlertType.ERROR, e.getMessage());
@@ -93,4 +96,6 @@ public class ViewManager {
   public Scene getScene_usersView() {
     return scene_usersView;
   }
+
+  public Scene getScene_addTenantView() { return scene_addTenantView; }
 }
