@@ -27,7 +27,7 @@
                     </font>
                 </Button>
                 <Button fx:id="newTenant" layoutX="20.0" layoutY="340.0" mnemonicParsing="false"
-                        onAction="#createTenant" prefHeight="30.0" prefWidth="150.0" text="neuer Mieter">
+                        onAction="#createTenant" prefHeight="30.0" prefWidth="150.0" text="Neuer Mieter">
                     <font>
                         <Font size="14.0"/>
                     </font>
@@ -36,3 +36,5 @@
         </Pane>
     </children>
 </GridPane>
+
+

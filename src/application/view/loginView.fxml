@@ -21,18 +21,8 @@
             <Font name="System Bold" size="24.0"/>
           </font>
         </Label>
-        <Label layoutX="200.0" layoutY="180.0" text="Benutzername:">
-          <font>
-            <Font size="14.0"/>
-          </font>
-        </Label>
-        <TextField fx:id="username" layoutX="200.0" layoutY="200.0" prefWidth="400.0" prefHeight="30.0"/>
-        <Label layoutX="200.0" layoutY="240.0" text="Passwort:">
-          <font>
-            <Font size="14.0"/>
-          </font>
-        </Label>
-        <PasswordField fx:id="password" layoutX="200.0" layoutY="260.0" prefWidth="400.0" prefHeight="30.0"/>
+        <TextField fx:id="username" layoutX="200.0" layoutY="200.0" prefWidth="400.0" prefHeight="30.0" promptText="Benutzername"/>
+        <PasswordField fx:id="password" layoutX="200.0" layoutY="260.0" prefWidth="400.0" prefHeight="30.0" promptText="Passwort"/>
         <Button fx:id="LoginBtn" layoutX="200.0" layoutY="340.0" mnemonicParsing="false" onAction="#login" prefWidth="180.0" prefHeight="30.0" text="Login">
           <font>
             <Font size="14.0"/>
