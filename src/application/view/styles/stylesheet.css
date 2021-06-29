@@ -1,3 +1,23 @@
-.login-button {
+.username {
+    -fx-color: black;
+}
 
+.loginBtn {
+    -fx-color: white;
+    -fx-border: 5px solid black;
+}
+
+.cancelBtn {
+    -fx-color: white;
+    -fx-border: 5px solid black;
+}
+
+.password {
+    -fx-color: white;
+    -fx-border: 5px solid black;
+}
+
+.grid {
+    -fx-background-image: url("slider1-2.jpeg");
+    -fx-filter: blur(8px);
 }

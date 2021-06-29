@@ -3,9 +3,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+<?import java.net.URL?>
 
 <GridPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1"
           xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.TenantController">
+    <stylesheets>
+        <URL value="@styles/stylesheet.css"/>
+    </stylesheets>
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
     </columnConstraints>
@@ -20,6 +24,7 @@
                         <Font name="System Bold" size="24.0"/>
                     </font>
                 </Label>
+
                 <Button fx:id="dashboardBtn" layoutX="620.0" layoutY="540.0" mnemonicParsing="false"
                         onAction="#dashboard" prefHeight="30.0" prefWidth="150.0" text="Dashboard">
                     <font>

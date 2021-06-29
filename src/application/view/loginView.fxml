@@ -6,34 +6,44 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.*?>
-<GridPane prefWidth="800.0" prefHeight="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
-  <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
-  </columnConstraints>
-  <rowConstraints>
-    <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
-  </rowConstraints>
-  <children>
-    <Pane prefWidth="200.0" prefHeight="200.0">
-      <children>
-        <Label layoutX="368.0" layoutY="20.0" text="Login">
-          <font>
-            <Font name="System Bold" size="24.0"/>
-          </font>
-        </Label>
-        <TextField fx:id="username" layoutX="200.0" layoutY="200.0" prefWidth="400.0" prefHeight="30.0" promptText="Benutzername"/>
-        <PasswordField fx:id="password" layoutX="200.0" layoutY="260.0" prefWidth="400.0" prefHeight="30.0" promptText="Passwort"/>
-        <Button fx:id="LoginBtn" layoutX="200.0" layoutY="340.0" mnemonicParsing="false" onAction="#login" prefWidth="180.0" prefHeight="30.0" text="Login">
-          <font>
-            <Font size="14.0"/>
-          </font>
-        </Button>
-        <Button fx:id="quitBtn" layoutX="420.0" layoutY="340.0" mnemonicParsing="false" onAction="#quit" prefWidth="180.0" prefHeight="30.0" text="Beenden">
-          <font>
-            <Font size="14.0"/>
-          </font>
-        </Button>
-      </children>
-    </Pane>
-  </children>
+<?import java.net.URL?>
+
+<GridPane styleClass="grid" prefWidth="800.0" prefHeight="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+    <stylesheets>
+        <URL value="@styles/stylesheet.css"/>
+    </stylesheets>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Pane prefWidth="200.0" prefHeight="200.0">
+            <children>
+                <Label layoutX="368.0" layoutY="20.0" text="Login">
+                    <font>
+                        <Font name="System Bold" size="24.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="username" styleClass="username" layoutX="200.0" layoutY="200.0" prefWidth="400.0" prefHeight="30.0"
+                           promptText="Benutzername"/>
+                <PasswordField fx:id="password" styleClass="password" layoutX="200.0" layoutY="260.0" prefWidth="400.0" prefHeight="30.0"
+                               promptText="Passwort"/>
+                <Button fx:id="LoginBtn" styleClass="loginBtn" layoutX="200.0" layoutY="340.0" mnemonicParsing="false" onAction="#login"
+                        prefWidth="180.0" prefHeight="30.0" text="Login">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="quitBtn" styleClass="cancelBtn" layoutX="420.0" layoutY="340.0" mnemonicParsing="false" onAction="#quit"
+                        prefWidth="180.0" prefHeight="30.0" text="Beenden">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
 </GridPane>
