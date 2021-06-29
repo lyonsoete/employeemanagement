@@ -31,5 +31,7 @@ public class TenantController implements Initializable {
   @FXML
   public void createTenant(){
     tenantService.createUser(new Tenant("Herr", "Lyon", "Söte", "LyonSoete"));
+    ViewManager.getInstance().activateScene(ViewManager.getInstance().getScene_addTenantView());
   }
+
 }
