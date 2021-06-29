@@ -30,4 +30,9 @@ public class AddTenantController {
 		ViewManager.getInstance().activateScene(ViewManager.getInstance().getScene_tenantView());
 	}
 
+	@FXML
+	public void cancel() {
+		ViewManager.getInstance().activateScene(ViewManager.getInstance().getScene_tenantView());
+	}
+
 }
