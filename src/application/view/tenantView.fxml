@@ -24,14 +24,20 @@
                         <Font name="System Bold" size="24.0"/>
                     </font>
                 </Label>
-
+                <Button fx:id="tenantExample" layoutX="250.0" layoutY="100.0" mnemonicParsing="false" prefHeight="150.0"
+                        prefWidth="250.0"
+                        text="Mieter:&#xA;Mustermann, Max&#xA;Mustermann@Mustermail.de&#xA;&#xA;Immobilie(n):&#xA;Musterstraße 1">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
                 <Button fx:id="dashboardBtn" layoutX="620.0" layoutY="540.0" mnemonicParsing="false"
                         onAction="#dashboard" prefHeight="30.0" prefWidth="150.0" text="Dashboard">
                     <font>
                         <Font size="14.0"/>
                     </font>
                 </Button>
-                <Button fx:id="newTenant" layoutX="20.0" layoutY="340.0" mnemonicParsing="false"
+                <Button fx:id="newTenant" layoutX="300.0" layoutY="340.0" mnemonicParsing="false"
                         onAction="#createTenant" prefHeight="30.0" prefWidth="150.0" text="Neuer Mieter">
                     <font>
                         <Font size="14.0"/>

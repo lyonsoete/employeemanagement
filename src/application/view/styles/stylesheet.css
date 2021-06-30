@@ -21,3 +21,8 @@
     -fx-background-image: url("slider1-2.jpeg");
     -fx-filter: blur(8px);
 }
+
+.tenantExample {
+    -fx-color: black;
+    -fx-background-color: black;
+}
