@@ -1,15 +1,25 @@
 package application.service;
 
-import application.Enums.ObjectTypes;
-import application.entity.Address;
 import application.entity.RealEstate;
 import application.repository.RealEstateRepository;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class RealEstateService {
 
-  private final RealEstateRepository realEstateRepository = new RealEstateRepository();
+	private final RealEstateRepository realEstateRepository = new RealEstateRepository();
 
-  public void createRealEstate() {
-    realEstateRepository.createRealEstate(new RealEstate("OBJ_1", ObjectTypes.PRIVATE, "first object", new Address("teststreet", 22, 50672, "Koeln"), 45.5, 8.7, 150, "notes"));
-  }
+	public ObservableList<RealEstate> getList() {
+		ObservableList<RealEstate> realEstatesObs = FXCollections.observableArrayList();
+		realEstatesObs.addAll(realEstateRepository.getList());
+		return realEstatesObs;
+	}
+
+	public void saveOrUpdate(RealEstate realEstate) {
+		realEstateRepository.saveOrUpdate(realEstate);
+	}
+
+	public void delete(RealEstate id) {
+		realEstateRepository.delete(id);
+	}
 }
